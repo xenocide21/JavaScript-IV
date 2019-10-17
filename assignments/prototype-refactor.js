@@ -24,7 +24,7 @@ class GameObject {
     }
 
     destroy() {
-        return `${this.name} was killed`
+        return `${this.name} was killed.`
     }
 }
 
@@ -38,7 +38,7 @@ class CharacterStats extends GameObject{
         this.name = attributes.name;
     }
     takeDamage(){
-        return `${this.name} took damage`
+        return `${this.name} took damage.`
     }
 }
 
@@ -51,7 +51,7 @@ class Humanoid extends CharacterStats{
         this.weapons = attributes.weapons;
     }
     greet(){
-        return `${this.name} says "prepare for battle" in ${this.language}`
+        return `${this.name} says "prepare for battle" in ${this.language}.`
     }
 }
 
@@ -62,10 +62,10 @@ class Oracle extends Humanoid{
         this.magicPower = attributes.magicPower;
     }
     spellHeal(Humanoid){
-        return `${this.name} uses Healing spell to regenerate life to ${Humanoid.name}`
+        return `${this.name} uses Healing spell to regenerate life to ${Humanoid.name}.`
     }
     spellRes(Humanoid){
-        return `${this.name} casts resurrection spell on ${Humanoid.name}`
+        return `${this.name} casts resurrection spell on ${Humanoid.name}.`
     }
 }
 
@@ -148,7 +148,7 @@ console.log(ranger.language); // Vail
 console.log(KhaosSlayer.guild); //KhaosSlayer's Guild
 console.log(ranger.greet()); // Lilith offers a greeting in common.
 console.log(oracle.greet());
-console.log(oracle.takeDamage()); // Yuui took damage.
+console.log(KhaosSlayer.takeDamage()); // Yuui took damage.
 console.log(oracle.spellHeal(KhaosSlayer));
 console.log(KhaosSlayer.destroy()); // KhaosSlayer was killed.
 console.log(oracle.spellRes(KhaosSlayer));
