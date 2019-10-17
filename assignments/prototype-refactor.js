@@ -26,10 +26,6 @@ class GameObject {
     destroy() {
         return `${this.name} was killed`
     }
-
-    resurrect() {
-        return `${this.name} was resurrected to full health`
-    }
 }
 
 class CharacterStats extends GameObject{
@@ -43,9 +39,6 @@ class CharacterStats extends GameObject{
     }
     takeDamage(){
         return `${this.name} took damage`
-    }
-    receiveHealing(){
-        return `${this.name} was healed to full life`;
     }
 }
 
