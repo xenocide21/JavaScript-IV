@@ -22,7 +22,6 @@ class GameObject {
         this.createdAt = attributes.createdAt;
         this.dimensions = attributes.dimensions;
     }
-
     destroy() {
         return `${this.name} was killed.`
     }
